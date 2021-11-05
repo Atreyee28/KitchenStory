@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Kitchen_Story HomePage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/store.js" async></script>
+    <script src="js/js_file.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Kitchen Story <img  src="images/kitchenstory_logo.png" width="20" height="20%"></a>
+            <header class="headstyle">
+                <nav>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Products/Brand" title="Type items">
+                </nav>
+            </header>
+            <a  href="./additem_admin.html"><button class="btn btn-success" type="submit">Add Items</button></a>
+            <a href="./adminpage.html"><button class="btn btn-success" type="submit">Login (Admin)</button></a>
+            <a href="#cart"><button class="btn btn-success" type="submit">My Cart</button></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+               <h3>Available here:</h3>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Veg">Fresh Vegetables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fruits">Fresh Fruits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#milk">Milk</a>
+            </li>
+          </ul>
+        <div class ="text-center">
+            <h1> Welcome to Kitchen Story!</h1>
+          </div>
+          <br/><br/>
+          <div class ="text-center" >
+            <img  src="images/Wall.jpg" width="500" height="50%">
+           </div>
+           <ul id="myUL">           
+           <section class="container content-section" style="background-color:bisque;">
+            <h2 class="section-header" id="Veg" style="color:green;">Fresh Vegetables</h2>
+            <li>
+            <div class= "shop-item">
+                <a href="#"><span class="shop-item-title">Onion</span></a>
+                    <img class="shop-item-image" src="images/Onion.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹39.50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Potato</span></a>
+                    <img class="shop-item-image" src="images/Potato.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹20</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Carrot</span></a>
+                    <img class="shop-item-image" src="images/carrot.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Fresh Beans</span></a>
+                    <img class="shop-item-image" src="images/beans.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹70</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Tomato</span></a>
+                    <img class="shop-item-image" src="images/tomato.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹70</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Bhendi</span></a>
+                    <img class="shop-item-image" src="images/Bhendi.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹30</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Green Capsicum</span></a>
+                    <img class="shop-item-image" src="images/green_capsicum.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹60</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                </li>
+        </section>
+        </ul>
+        <hr>
+        <section class="container content-section" style="background-color: cornsilk;">
+            <h2 class="section-header" id="fruits" style="color:green">Fresh Fruits</h2>
+            <ul id="myUL1">
+              <li>
+            <div class= "shop-item">
+                <a href="#"><span class="shop-item-title">Apple</span></a>
+                    <img class="shop-item-image" src="images/apple.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹120</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Mosumbi</span></a>
+                    <img class="shop-item-image" src="images/mosambi.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹10</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Banana</span></a>
+                    <img class="shop-item-image" src="images/banana.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹30</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Watermelon</span></a>
+                    <img class="shop-item-image" src="images/watermelon.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Orange</span></a>
+                    <img class="shop-item-image" src="images/orange.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹20</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                </li>
+              </ul>
+        </section>   
+        <hr>
+        <section class="container content-section" style="background-color:wheat;">
+            <h2 class="section-header" id="milk" style="color: blueviolet;">Milk</h2>
+            <ul id="myUL2">
+              <li>
+            <div class= "shop-item">
+                <a href="#"><span class="shop-item-title">Amul Cow Milk</span></a>
+                    <img class="shop-item-image" src="images/Amulcow.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹25</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Amul Taaza Milk</span></a>
+                    <img class="shop-item-image" src="images/Amul Taaza.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹20</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Metro Milk</span></a>
+                    <img class="shop-item-image" src="images/metro milk.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹30</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <li>
+                <div class="shop-item">
+                    <a href="#"><span class="shop-item-title">Mother Dairy Milk</span></a>
+                    <img class="shop-item-image" src="images/mother dairy milk.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹31</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              </ul>
+        </section>   
+        <hr>
+        <section class="container content-section" id="cart" style="background-color: darkkhaki;">
+            <h2 class="section-header">Shopping Cart </h2>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">₹0</span>
+            </div>
+    
+                </div class="container">
+                <center>
+                <button class="btn btn-primary btn-purchase" type="button" onclick="next()">Buy</button>
+                </center>
+            </form>
+        </section>  
+        
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                ul1 = document.getElementById("myUL1");
+                li1 = ul1.getElementsByTagName("li");
+                ul2 = document.getElementById("myUL2");
+                li2 = ul2.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+                for (i = 0; i < li1.length; i++) {
+                    a = li1[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li1[i].style.display = "";
+                    } else {
+                        li1[i].style.display = "none";
+                    }
+                }
+                for (i = 0; i < li2.length; i++) {
+                    a = li2[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li2[i].style.display = "";
+                    } else {
+                        li2[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+</body>
+</html>

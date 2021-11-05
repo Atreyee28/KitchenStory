@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Edit Food Items(Admin)</title>
+    <script src="js/js_file.js"></script>
+    <script src="js/Admin.js" async></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Kitchen Story <img  src="images/kitchenstory_logo.png" width="20" height="20%"></a>
+            <a  href="./additem_admin.html"><button class="btn btn-success" type="submit">Add Items</button></a>
+            <a href="./dashboard.html"><button class="btn btn-success" type="submit">Logout</button></a>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="text-center">
+        <h2> Welcome to Kitchen Story!</h2>
+        <h3 class="lead">Admin can add, delete or edit product..</h3>
+    </div>
+ 
+    
+
+    <!-- content -->
+    <div class="bg-top-shadow" style="background-color: bisque;">
+        <div class="main">
+            <div class="box">
+                <div class="padding">
+                    <div class="container_12">
+                        <div class="wrapper">
+                            <div class="grid_12">
+                                <div class="indent-left">
+                                    <p>Insert Product name and quantity for your shopping product list. </p>
+
+                                    <form name=ShoppingList>
+                                        <div id="main">
+                                            <table>
+                                                <tr>
+                                                    <td><b>Product Id :</b></td>
+                                                    <td><input type=text name="product_id " id="product_id"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Product name :</b></td>
+                                                    <td> <input type=text name="product" id="product"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Description :</b> </td>
+                                                    <td>  <input type=text name="Description" id="Description"> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>count :</b></td>
+                                                    <td>  <input type=text name="count" id="count">  </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b> Price:</b></td>
+                                                    <td>  <input type=text name="price" id="price">   </td>
+                                                </tr>
+
+                                                <tr class="center">
+                                                    <td>
+                                                        <button type="button" class="btn btn-success" onclick="Addclick();">Add</button>
+                                                        
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<center>
+    <section style="background-color:cornsilk;">
+        <h3>Products List</h3>
+        <table id="Item" style="width:50%">
+            <tr>
+                <th>Product ID </th>
+                <th>Product name</th>
+                <th>Description </th>
+                <th>count  </th>
+                <th>Price </th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Onion</td>
+                <td>Fresh Onion </td>
+                <td>30(kgs)</td>
+                <td>39.50</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Potato</td>
+                <td>Fresh Potato</td>
+                <td>16 (Kg.s)</td>
+                <td>20</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Carrot</td>
+                <td>Orange Carrot</td>
+                <td>10 (kg)
+                </td>
+                <td>50</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Fresh Beans</td>
+                <td>Green Beans</td>
+                <td>9 (kg)
+                </td>
+                <td>70</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Tomato</td>
+                <td>Veg</td>
+                <td>10 (kg)
+                </td>
+                <td>70</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Bhendi</td>
+                <td>Veg</td>
+                <td>12 (kg)
+                </td>
+                <td>30</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>Capsicum</td>
+                <td>Green Veg</td>
+                <td>7 (kg)
+                </td>
+                <td>60</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>108</td>
+                <td>Apple</td>
+                <td>Fresh Fruits</td>
+                <td>9 (kg)
+                </td>
+                <td>120</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>109</td>
+                <td>Mosumbi</td>
+                <td>Fruit</td>
+                <td>10 (kg)
+                </td>
+                <td>10</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>Banana</td>
+                <td>Fruit</td>
+                <td>14 (kg)
+                </td>
+                <td>30</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>Watermelon</td>
+                <td>Fruit</td>
+                <td>18 (kg)
+                </td>
+                <td>50</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>112</td>
+                <td>Orange</td>
+                <td>Orange fruit</td>
+                <td>10 (kg)
+                </td>
+                <td>20</td>
+                <td><input type="button" value="Delete" class="btn btn-primary" onclick="deleteRow(this)"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+    </section>
+</center>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/login.js"></script>
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Kitchen Story <img  src="images/kitchenstory_logo.png" width="20" height="20%"></a>
+        <a  href="./additem_admin.html"><button class="btn btn-success" type="submit">Add Items</button></a>
+        <a href="./adminpage.html"><button class="btn btn-success" type="submit">Login (Admin)</button></a>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+      <div class="text-center">
+        <h1 id="h1id" class="headstyle"> Welcome to Kitchen Story!</h1>
+        <h3 class="lead">Only Admin can Login Here !</h3> <br><hr>
+    </div>
+ 
+    
+
+<div class="container" style="padding: 40px 55px 45px 55px; width: 450px; background: rgb(253, 217, 116);">
+<div class="main">
+<form id="form_id" method="post" name="myform">
+  <br>
+  <br>
+<label>User Name :</label>
+<input type="text" name="username" id="username" value="Admin" disabled/>
+<br>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<br> <br>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+<br/>
+<br/>
+                <p class="text-right">
+                  <a href="changepassword.html">  Forgot password?</a>
+</form>
+</div>
+</div>
+</body>
+</html>
